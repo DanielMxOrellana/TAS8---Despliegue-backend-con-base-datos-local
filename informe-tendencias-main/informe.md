@@ -96,8 +96,10 @@ New-Item .env
 New-Item .dockerignore
 ![alt text](<Captura de pantalla 2025-11-28 164024.png>)
 Paso 3: Editar el archivo .env
+
 Paso 4: Escribir el Dockerfile multi-stage
 ![alt text](<Captura de pantalla 2025-11-28 170417.png>)
+
 Paso 5: Crear docker-compose.yml
 
 Definir los servicios:
@@ -114,6 +116,7 @@ En PowerShell:
 
 docker compose up --build -d
 ![alt text](<Captura de pantalla 2025-11-28 164100.png>)
+
 Paso 7: Verificación de estado
 
 Revisar logs:
@@ -121,6 +124,7 @@ Revisar logs:
 docker compose logs -f app
 docker compose logs -f db
 ![alt text](image.png)
+
 Paso 8: Acceso a los servicios
 
 Backend → http://localhost:8080
